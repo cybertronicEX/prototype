@@ -1,0 +1,73 @@
+.Base{
+    /* display: grid; */
+    align-items: center;
+}
+/* .Rname{
+    height: 200px;
+} */
+.Rname1{
+    /* height: 40px; */
+    font-size: 30px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif, cursive ;
+    font-style: italic;
+    background-color:rgb(226, 43, 43);
+
+}
+/* .Rname2{
+    height: 60px;
+    font-size: 50px;
+    text-align: right;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, cursive;
+    font-style: italic;
+    background-color:rgb(192, 226, 43);
+    
+} */
+
+.text{
+    font-size: 50px;
+    text-align: right;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, cursive;
+    font-style: italic;
+    background-color:blueviolet;
+    min-width:50%;  
+    height: 500px;
+    text-align: start;
+    /* padding-left: 200px; */
+   
+}
+
+
+ .image{
+    height: 500px;
+    align-items: center;
+    /* background-color: aquamarine; */
+    min-width:50%;
+    /* padding-left: 50%;  */
+    /* padding-bottom: 50%; */
+}
+.intro{
+   display:flex;
+   align-items: center;
+   width: 100%;
+   
+   align-content: space-between;
+   
+   
+}
+.logo{
+    height: fit-content;
+}
+.slideshow{
+    height: 100%;
+}
+
+.button1{
+    color: yellow;
+    align-items: center;
+    
+}
+
+.button1-hover{
+    color: aqua;
+}
