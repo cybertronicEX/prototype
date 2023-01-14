@@ -1,6 +1,7 @@
 .Base{
-    /* display: grid; */
+    box-sizing: border-box;
     align-items: center;
+    margin: 0;
 }
 /* .Rname{
     height: 200px;
@@ -30,26 +31,28 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, cursive;
     font-style: italic;
     background-color:blueviolet;
-    min-width:50%;  
-    height: 500px;
+    min-width:40%;  
+    height: 600px;
     text-align: start;
+    float: left;
     /* padding-left: 200px; */
    
 }
 
 
  .image{
-    height: 500px;
+    float: left;
+    height: 600px;
     align-items: center;
     /* background-color: aquamarine; */
-    min-width:50%;
+    width: 6000px;;
     /* padding-left: 50%;  */
     /* padding-bottom: 50%; */
 }
 .intro{
    display:flex;
    align-items: center;
-   width: 100%;
+   width: 100vw;
    
    align-content: space-between;
    
@@ -60,6 +63,7 @@
 }
 .slideshow{
     height: 100%;
+  
 }
 
 .button1{
@@ -71,3 +75,99 @@
 .button1-hover{
     color: aqua;
 }
+
+
+
+  .slider-wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    /* z-index: -1; */
+    
+    
+  }
+
+  .slide {
+    height: 70vh;
+    background-size: cover !important;
+    overflow: hidden;
+   
+  }
+  
+  .slide::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100px;
+      height: 100%;
+      /* background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.9))); */
+      /* background: linear-gradient(transparent, rgba(0, 0, 0, 0.9)); */
+      bottom: 0;
+      left: 0;
+  }
+  
+  .previousButton, .nextButton {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          z-index: 10;
+          background: url('https://www.svgrepo.com/show/459831/right-circle.svg') no-repeat center center / 50px;
+          width: 32px;
+          height: 32px;
+          text-indent: -9999px;
+          cursor: pointer;
+  }
+  
+  .previousButton:hover, .nextButton:hover {
+    background: url('https://www.svgrepo.com/show/459831/right-circle.svg') no-repeat center center / 50px;
+  }
+  
+  .previousButton {
+    left: 0;
+    -webkit-transform: rotate(180deg) translateY(calc(50% + 0px));
+            transform: rotate(180deg) translateY(calc(50% + 0px));
+  }
+  
+  /* .previousButton:hover {
+    /* left: -10px; 
+  } */
+  
+  .nextButton {
+    right: 0;
+  }
+  
+  /* .nextButton:hover {
+     right: -10px; 
+  } */
+
+  .slider-content img {
+    width: 600px;
+    height: 40px;
+    border: solid 2px rgba(255, 255, 255, 0.5);
+    border-radius: 100%;
+    vertical-align: middle;
+  }
+
+  
+/* @media (max-height: 500px) {
+    .slider-wrapper, .slide {
+      height: calc(100vh - 75px);
+   
+    }    
+  }
+  
+  @media (max-width: 640px) {
+    .slider-wrapper, .slide {
+      height: calc(80vh - 75px);
+    }    
+  }
+  
+   */
+
+   .redirectbutton{
+    background-color:aquamarine;
+    text-decoration: none;
+    border: solid 3px black;
+    border-radius: 6px;
+   }

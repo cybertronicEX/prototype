@@ -16,32 +16,16 @@ export default function App() {
       <div className="header">
         <div> 
           <Navbar />
-          {/* <nav>
-            <ul>
-              <li>
-                <Link to ="/">Home</Link>
-              </li>
-              <li>
-                <Link to ="/order">Order</Link>
-              </li>
-              <li>
-                <Link to ="/nopage">NoPage</Link>
-              </li>
-            </ul>
-          </nav> */}
+          <div className='Rname1'>
+          <h1 >THE GLAMOUR Resturant & Tea lounge</h1>
+        </div>
+       
         </div>
        
       </div>
-      <div className='Rname1'>
-          <h1 >THE GLAMOUR Resturant & Tea lounge</h1>
-        </div>
+      
      
-    {/* <Router>
-      <Navbar />
-      <Switch>
-          <Route path = '/' />
-      </Switch>
-    </Router> */}
+    
 
     <Routes>
         
