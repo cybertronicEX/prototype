@@ -1,0 +1,76 @@
+.orderBase{
+  display: flex;
+  font-size: 50px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+  font-style: italic;
+  /* align-items: center; */
+  /* justify-content: center; */
+  width: 100vw;
+
+}
+.ordercontent{
+    padding-top: 80px;
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKUtXv4f11W5ie56R4ehMfFP9DoQwdQziLeA&usqp=CAU"); */
+    background-color: aqua;
+    height: 100vh;
+    width: 100%;
+   
+}
+
+.foodimage{
+  width: 35%;
+  height:45vh;
+  padding-bottom: 10px;
+}
+
+.menu{
+  background-color: blueviolet;
+  display: flex;
+  height: max-content;
+  align-items: center;
+  width: 100%;
+}
+
+.description{
+  background-color: chartreuse;
+  /* padding: 3px; */
+  /* display:contents; */
+  text-align: justify;
+  /* height: max; */
+  border-bottom: 2px solid;
+  /* justify-content: center;
+  */
+  align-self: start;
+  width: 65%;
+  /* height:45vh; */
+  /* padding-bottom: 10px; */
+
+}
+.imagebox{
+
+  background-color: chocolate;
+  /* padding: 3px; */
+  width: 35%;
+  height: fit-content;
+
+}
+.d_item{
+  padding: 10px;
+}
+
+.add{
+  width: 600px;
+  height: 30;
+  /* z-index: 99; */
+  justify-content: space-between;
+
+}
+
+.dropdown{
+  height: 40px;
+  width: 500px;
+}
+.ddbtn{
+  width: 100px;
+  height: 40px;
+}

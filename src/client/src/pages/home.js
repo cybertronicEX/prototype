@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
 
 // import { Outlet, Link } from "react-router-dom";
 export default function Home(){
-    const navigate = useNavigate;
+    // const navigate = useNavigate;
     const images =[
         {title:'blah',image:pic},
         {title:'meh' ,image:pic2},
@@ -49,7 +49,9 @@ export default function Home(){
                 <div className='text'>
                     <p  >this is blah blah blah should edit this later on .. not so important rn . work more on the nav bar (maybe on the side that can pop out) image transition and footer go easy with color scheme</p>
                     {/* <button className='orderRedirect' onClick={()=>navigate("/order")}>Let's Get Started</button> */}
-                    <Link className='redirectbutton' to='/order'>Meh</Link>
+                    <div className='rbutton'>
+                        <Link className='redirectbutton' to='/order'>Lets get started</Link>
+                    </div>
                 </div>
             </div>
             <div className='orderbutton'>

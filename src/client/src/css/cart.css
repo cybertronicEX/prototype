@@ -1,0 +1,19 @@
+.cartbox{
+    padding-top: 100px;
+    background-color: rgb(88, 230, 230);
+    height: 100%;
+}
+
+.p{
+    font-size: 50px;
+    text-align: right;
+    font-family:  'Lato',sans-serif;
+    font-style: italic;
+    background-color:rgba(11, 40, 25, 0.292);
+  
+ 
+    text-align: start;
+    float: left;
+    /* padding-left: 200px; */
+   
+}
