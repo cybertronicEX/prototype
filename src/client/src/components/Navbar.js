@@ -1,14 +1,21 @@
 import React ,{ useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link ,useNavigate } from 'react-router-dom';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import { SidebarData } from './SidebarData';
 import "./Navbar.css"
 import  { IconContext } from 'react-icons';
-
+import { useAuth } from './AuthContext'; // Import the useAuth hook
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
   const showSidebar = () => setSidebar(!sidebar);
+  const { loggedIn, userEmail, logout } = useAuth(); // Use the userEmail
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    logout();
+    navigate('/');
+  };
   return (
     <>
     <IconContext.Provider value={{color :'#fff'}}>
@@ -37,7 +44,16 @@ function Navbar() {
             </li>
           )
         })}
+        {/* <li> */}
+        
+            
+        {/* </li> */}
       </ul>
+      {loggedIn && (
+                <div className="logoutbuttoncontaier">
+                  <button  className="logoutbutton" onClick={handleLogout}>Logout</button>
+                </div>
+              )}
     </nav>
     </IconContext.Provider>
     {/* <nav>

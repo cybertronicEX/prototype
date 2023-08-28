@@ -47,7 +47,7 @@ export default function Home(){
 
                 </div>
                 <div className='text'>
-                    <p  >this is blah blah blah should edit this later on .. not so important rn . work more on the nav bar (maybe on the side that can pop out) image transition and footer go easy with color scheme</p>
+                    <p  > image transition and footer go easy with color scheme .MAKE THE IMAGES AUTO PLAY BY USING A FUNCTION</p>
                     {/* <button className='orderRedirect' onClick={()=>navigate("/order")}>Let's Get Started</button> */}
                     <div className='rbutton'>
                         <Link className='redirectbutton' to='/order'>Lets get started</Link>

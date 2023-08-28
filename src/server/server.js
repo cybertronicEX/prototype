@@ -7,11 +7,13 @@ const FoodModel = require('./models/food_items');
 // require('dotenv').config();
 const cartBE = require("./routes/cartsBE");
 const cartModel = require('./models/cartmodel');
-
+const userBE  = require("./routes/userBE")
+const UserModel = require('./models/usermodel')
 const app =  express();
 // const port = process.env.port || 5000;
 
 app.use("/CartsBE",cartBE);
+app.use("/UserBE", userBE)
 
 mongoose.connect("mongodb+srv://cyberx:1234567a@cluster0.hfti6w2.mongodb.net/Resturant?retryWrites=true&w=majority");
 

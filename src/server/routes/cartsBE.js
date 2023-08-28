@@ -29,5 +29,19 @@ router.post("/addCart", async (req, res)=>{
     res.json(addcartitems);
 })
 
+router.post("/deleteCart", async (req, res)=>{
+    const id =req.body.foodid;
+    try {
+        let  filter = {"_id":foodid}
+        
+    await  cartModel.findByIdAndDelete(filter);
+    }
+    catch(err){
+        console.log(err);
+    }
+        res.send("deleted");
+    
+})
+
 
 module.exports = router;

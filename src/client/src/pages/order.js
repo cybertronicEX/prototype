@@ -137,6 +137,7 @@ export default function Order(){
         <div className='orderBase'>
            
             <div className='ordercontent'>
+                <p>add semi transparent component holder to hold both image and description and add a padding top . add css to alerts</p>
                 {foodlist.map((val)=>{ 
                 return <div key={val._id} className='menu'>
                     <img  className="foodimage"src={val.image} alt={val.name}/>

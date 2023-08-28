@@ -3,8 +3,11 @@ import React ,{useEffect}from 'react'
 import "../css/cart.css"
 import {useState} from  'react'
 
+
+
 export default function Cart() {
   const [listofcart,setlistofcart] = useState([])
+  const [fid,setfid]=useState("");
   useEffect(()=>{
     Axios.get("http://localhost:3001/CartsBE/getCart").then((response)=>{
       setlistofcart(response.data)
@@ -12,6 +15,12 @@ export default function Cart() {
     })
    }, []) 
     
+  //  const deleteCartItems =()=>{
+  //   Axios.get("http://localhost:3001/CartsBE/deleteCart",{
+  //     fid : listofcart._id,
+  //   }).then((response)=>{alert("deleted")}).catch((e) =>{console.error(e)});
+
+  //  }
  
   return (
     <div className='cartbox'>
@@ -23,6 +32,7 @@ export default function Cart() {
               <div className='d_item'>{meh.foodid}</div>
               <div className='d_item'>{meh.price}</div>
               <img className='foodimage'src={meh.image} alt="blah"/>
+              {/* <button onClick={()=>{deleteCartItems(fid)}}>delete</button> */}
             </div>
           })}
         </div>
